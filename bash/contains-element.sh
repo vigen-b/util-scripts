@@ -7,7 +7,7 @@ containsElement () {
   return 1
 }
 
-array=("yes" "y" "true", "1")
+array=("yes" "y" "true" "1")
 
 value_to_test="yes 1"
 
