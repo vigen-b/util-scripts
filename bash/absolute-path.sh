@@ -1,8 +1,10 @@
 #!/bin/bash
 
-echo "DIRNAME = $(dirname $0)"
 dir=$(dirname $0)
-echo "PWD = $(pwd)"
+echo "DIRNAME = ${dir}"
+
 pwd=$(pwd)
-absolute_path=$(realpath "$pwd/$dir")
-echo "RESOLVED PATH = $absolute_path"
+echo "PWD = ${pwd}"
+
+absolute_path=$(realpath "${pwd}/${dir}")
+echo "RESOLVED PATH = ${absolute_path}"
